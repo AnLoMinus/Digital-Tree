@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עץ החיים - עשר הספירות וארבעת העולמות</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>עץ החיים - עשר הספירות וארבעת העולמות</h1>
+        <div class="main-content">
+            <div id="tree-svg-container"></div>
+            <div class="worlds-container">
+                <div class="world" data-world="atzilut">
+                    <h3>עולם האצילות ✨</h3>
+                    <p>כתר, חכמה, בינה</p>
+                    <div class="world-description">
+                        <span class="world-emoji">🔥</span>
+                        עולם האלוקות הטהור, מקור האור האינסופי
+                    </div>
+                </div>
+                <div class="world" data-world="briah">
+                    <h3>עולם הבריאה 📖</h3>
+                    <p>חסד, גבורה, תפארת</p>
+                    <div class="world-description">
+                        <span class="world-emoji">🪶</span>
+                        עולם הכסא, ראשית הנבראים
+                    </div>
+                </div>
+                <div class="world" data-world="yetzirah">
+                    <h3>עולם היצירה 🌀</h3>
+                    <p>נצח, הוד, יסוד</p>
+                    <div class="world-description">
+                        <span class="world-emoji">🌳</span>
+                        עולם המלאכים והצורות הרוחניות
+                    </div>
+                </div>
+                <div class="world" data-world="asiah">
+                    <h3>עולם העשייה 🏠</h3>
+                    <p>מלכות</p>
+                    <div class="world-description">
+                        <span class="world-emoji">🤲</span>
+                        העולם הגשמי והמוחשי
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sefira-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div class="modal-body">
+                <p id="modal-description"></p>
+                <div class="attributes-container">
+                    <h3>מאפיינים:</h3>
+                    <ul id="modal-attributes">
+                    </ul>
+                </div>
+            </div>
+            <div class="tarot-section">
+                <h3>קשרים נוספים</h3>
+                <div class="connection-grid">
+                    <div class="connection-item">
+                        <strong>קלף טארוט:</strong>
+                        <span id="tarot-card"></span>
+                    </div>
+                    <div class="connection-item">
+                        <strong>מלאך:</strong>
+                        <span id="angel-name"></span>
+                    </div>
+                    <div class="connection-item">
+                        <strong>אות עברית:</strong>
+                        <span id="hebrew-letter"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
