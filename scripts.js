@@ -35,6 +35,12 @@ const sefirotInfo = {
         { name: "רצון", description: "הדחף להגשמת ייעוד הנשמה בעולם" },
       ],
     },
+    holyNames: {
+      primary: "אהיה",
+      full: "אהיה אשר אהיה",
+      combination: "יוד-הי-ויו-הי",
+      gematria: 21,
+    },
   },
   חכמה: {
     title: "חכמה - Wisdom",
@@ -65,6 +71,12 @@ const sefirotInfo = {
       description: "מיעוט העצמי והתבטלות למקור החכמה",
       expression: "היכולת לקבל השראה חדשה",
     },
+    holyNames: {
+      primary: "י-ה",
+      full: "יוד-הא",
+      combination: "יוד-הי",
+      gematria: 15,
+    },
   },
   בינה: {
     title: "בינה - Understanding",
@@ -93,6 +105,12 @@ const sefirotInfo = {
       title: "שמחה",
       description: "השמחה בהתגבשות והבנת תובנה חדשה",
       expression: "קליטת הרעיון בכלי המחשבה",
+    },
+    holyNames: {
+      primary: "יהוה",
+      full: "יהוה בניקוד אלהים",
+      combination: "יוד-הא-ואו-הא",
+      gematria: 26,
     },
   },
   חסד: {
@@ -123,6 +141,12 @@ const sefirotInfo = {
       description: "הרגש הפנימי המפעם במעשי החסד",
       expression: "רגש של קירוב וחיבה",
     },
+    holyNames: {
+      primary: "אל",
+      full: "אל חסד",
+      combination: "אלף-למד",
+      gematria: 31,
+    },
   },
   גבורה: {
     title: "גבורה - Strength",
@@ -151,6 +175,12 @@ const sefirotInfo = {
       title: "יראה",
       description: "הרגש הפנימי המפעם בפעולות הגבורה",
       expression: "רגש של ריחוק וגבול",
+    },
+    holyNames: {
+      primary: "אלהים",
+      full: "אלהים גבור",
+      combination: "אלף-למד-הא-יוד-מם",
+      gematria: 86,
     },
   },
   תפארת: {
@@ -181,6 +211,12 @@ const sefirotInfo = {
       description: "שילוב של חסד ודין",
       expression: "דאגה לזולת מתוך ראייה מפוכחת ואהבה",
     },
+    holyNames: {
+      primary: "יהוה",
+      full: "יהוה תפארת",
+      combination: "יוד-הא-ואו-הא",
+      gematria: 26,
+    },
   },
   נצח: {
     title: "נצח - Victory",
@@ -209,6 +245,12 @@ const sefirotInfo = {
       title: "בטחון",
       description: "הכח לנצח נובע מבטחון פעיל בנפש",
       expression: "אמונה ביכולת להצליח",
+    },
+    holyNames: {
+      primary: "יהוה צבאות",
+      full: "יהוה צבאות נצח",
+      combination: "יוד-הא-ואו-הא צדי-באת-אות-תו",
+      gematria: 525,
     },
   },
   הוד: {
@@ -239,6 +281,12 @@ const sefirotInfo = {
       description: "היכולת להודות נובעת מאמונה תמימה",
       expression: "קבלה והכרה בטוב",
     },
+    holyNames: {
+      primary: "אלהים צבאות",
+      full: "אלהים צבאות הוד",
+      combination: "אלף-למד-הא-יוד-מם צדי-באת-אות-תו",
+      gematria: 585,
+    },
   },
   יסוד: {
     title: "יסוד - Foundation",
@@ -268,6 +316,12 @@ const sefirotInfo = {
       description: "אימות כוחות הנפש במפגש עם המציאות",
       expression: "יכולת ההתקשרות האמיתית",
     },
+    holyNames: {
+      primary: "שדי",
+      full: "אל שדי",
+      combination: "שין-דלת-יוד",
+      gematria: 314,
+    },
   },
   מלכות: {
     title: "מלכות - Kingdom",
@@ -296,6 +350,12 @@ const sefirotInfo = {
       title: "שפלות",
       description: "ענווה פנימית למרות המעמד החיצוני",
       expression: "יכולת הקבלה מהספירות העליונות",
+    },
+    holyNames: {
+      primary: "אדני",
+      full: "אדני מלך",
+      combination: "אלף-דלת-נון-יוד",
+      gematria: 65,
     },
   },
 };
@@ -721,6 +781,29 @@ function showModal(sefirahId) {
                   .join("")}
             </div>
         </div>
+
+        <!-- הוספת חלק שמות הקודש -->
+        <div class="modal-section holy-names-section">
+          <h3>שמות הקודש</h3>
+          <div class="holy-names-grid">
+            <div class="holy-name-item">
+              <strong>שם עיקרי:</strong>
+              <span class="holy-name primary">${info.holyNames.primary}</span>
+            </div>
+            <div class="holy-name-item">
+              <strong>שם מלא:</strong>
+              <span class="holy-name full">${info.holyNames.full}</span>
+            </div>
+            <div class="holy-name-item">
+              <strong>צירוף:</strong>
+              <span class="combination">${info.holyNames.combination}</span>
+            </div>
+            <div class="holy-name-item">
+              <strong>גימטריה:</strong>
+              <span class="gematria">${info.holyNames.gematria}</span>
+            </div>
+          </div>
+        </div>
     `;
 
   // הפעלת אנימציות
@@ -948,3 +1031,56 @@ function getPartzuf(sefirahId) {
   };
   return partzufim[sefirahId] || "זעיר אנפין";
 }
+
+// פונקציה לחישוב גימטריה
+function calculateGematria(str) {
+  const gematriaValues = {
+    א: 1,
+    ב: 2,
+    ג: 3,
+    ד: 4,
+    ה: 5,
+    ו: 6,
+    ז: 7,
+    ח: 8,
+    ט: 9,
+    י: 10,
+    כ: 20,
+    ל: 30,
+    מ: 40,
+    נ: 50,
+    ס: 60,
+    ע: 70,
+    פ: 80,
+    צ: 90,
+    ק: 100,
+    ר: 200,
+    ש: 300,
+    ת: 400,
+    ך: 20,
+    ם: 40,
+    ן: 50,
+    ף: 80,
+    ץ: 90,
+  };
+
+  return str.split("").reduce((sum, char) => {
+    return sum + (gematriaValues[char] || 0);
+  }, 0);
+}
+
+// פונקציה לבדיקת תקינות הגימטריות
+function validateGematrias() {
+  Object.entries(sefirotInfo).forEach(([sefirah, info]) => {
+    const calculatedGematria = calculateGematria(info.holyNames.primary);
+    if (calculatedGematria !== info.holyNames.gematria) {
+      console.warn(`אזהרה: אי התאמה בגימטריה של ${sefirah}`);
+      console.warn(
+        `מחושב: ${calculatedGematria}, מוגדר: ${info.holyNames.gematria}`
+      );
+    }
+  });
+}
+
+// הפעלת הבדיקה בטעינת העמוד
+document.addEventListener("DOMContentLoaded", validateGematrias);

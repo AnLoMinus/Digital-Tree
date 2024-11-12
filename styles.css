@@ -858,3 +858,64 @@ h1 {
   left: auto;
   z-index: 1000;
 }
+
+/* סגנונות לחלק שמות הקודש */
+.holy-names-section {
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(245, 245, 245, 0.95);
+  border-radius: 12px;
+  border-right: 4px solid #4a5568;
+}
+
+.holy-names-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.holy-name-item {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.holy-name-item strong {
+  display: block;
+  color: #2d3748;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+.holy-name {
+  font-size: 1.2em;
+  color: #1a202c;
+}
+
+.holy-name.primary {
+  font-weight: bold;
+  color: #2b6cb0;
+}
+
+.combination {
+  font-size: 1.1em;
+  color: #4a5568;
+}
+
+.gematria {
+  font-size: 1.1em;
+  color: #718096;
+}
+
+/* התאמה למסכים קטנים */
+@media (max-width: 768px) {
+  .holy-names-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .holy-name-item {
+    padding: 10px;
+  }
+}
