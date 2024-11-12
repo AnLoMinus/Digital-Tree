@@ -39,10 +39,10 @@
 
 ```bash
 # שכפול הפרויקט
-git clone https://github.com/your-username/digital-tree-of-life.git
+git clone https://github.com/AnLoMinus/Digital-Tree.git
 
 # כניסה לתיקיית הפרויקט
-cd digital-tree-of-life
+cd Digital-Tree
 
 # פתיחת הפרויקט בדפדפן
 open index.html
