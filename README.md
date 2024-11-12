@@ -1,5 +1,8 @@
 # 🌳 עץ החיים הדיגיטלי | Digital Tree of Life
 
+<img width="1680" alt="image" src="https://github.com/user-attachments/assets/0dff03bb-da67-4401-8059-6242adb9c527">
+
+
 <div dir="rtl">
 
 ## 📖 תיאור הפרויקט | Project Description
@@ -73,9 +76,9 @@ open index.html
 
 ## 📞 יצירת קשר | Contact
 
-שמך - [@your_twitter](https://twitter.com/your_twitter) - <email@example.com>
+שמך - [AnLoMinusX](https://x.com/AnLoMinusX) - <areweleon@gmail.com>
 
-קישור לפרויקט: [https://github.com/your-username/digital-tree-of-life](https://github.com/your-username/digital-tree-of-life)
+קישור לפרויקט: [https://github.com/AnLoMinus/Digital-Tree](https://github.com/AnLoMinus/Digital-Tree)
 
 </div>
 
